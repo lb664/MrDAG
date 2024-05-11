@@ -68,9 +68,9 @@ The first example concerns the analysis of lifestyle and behavioural exposures t
 the indices of the traits that define the outcomes and exposures are provided 
 in a list object
 
-    MrDAGCheck <- NULL
-    MrDAGCheck$Y_idx <- 1 : 7    # Mental health phenotypes
-    MrDAGCheck$X_idx <- 8 : 13   # Lifestyle and behavioural traits
+    MrDAGcheck <- NULL
+    MrDAGcheck$Y_idx <- 1 : 7    # Mental health phenotypes
+    MrDAGcheck$X_idx <- 8 : 13   # Lifestyle and behavioural traits
 
 and **MrDAG** algorithm is run to generate 1,000 posterior samples of all unknowns
 
@@ -98,9 +98,9 @@ This second example performs the analysis of the same data set for reverse causa
 
 the indices of the traits that define the outcomes and exposures are provided in a list object
 
-    MrDAGCheck <- NULL
-    MrDAGCheck$Y_idx <- 1 : 6    # Lifestyle and behavioural traits
-    MrDAGCheck$X_idx <- 7 : 13   # Mental health phenotypes
+    MrDAGcheck <- NULL
+    MrDAGcheck$Y_idx <- 1 : 6    # Lifestyle and behavioural traits
+    MrDAGcheck$X_idx <- 7 : 13   # Mental health phenotypes
 
 and **MrDAG** algorithm is run to generate 1,000 posterior samples of all unknowns
 
