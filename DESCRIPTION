@@ -1,0 +1,24 @@
+Package: MrDAG
+Type: Package
+Title: MrDAG: Mendelian randomization (MR) with Bayesian Directed Acyclic (DAG) Graphs exploration and causal effects estimation
+Version: 0.1.0
+Date: 2024-05-01
+Authors@R: as.person(c(
+    "Leonardo Bottolo <lb664@cam.ac.uk> [aut, cre]", 
+    "Verena Zuber <v.zuber@imperial.ac.uk> [aut, ctb]"))
+Maintainer: Leonardo Bottolo <lb664@cam.ac.uk>
+Description: This package performs Mendelian randomization for multiple exposures and outcomes with Bayesian Directed Acyclic 
+    Graphs exploration and causal effects estimation.
+License: GPL-2 | file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+RdMacros: Rdpack
+Imports: 
+    gRbase,
+    mvtnorm,
+    Rdpack,
+    utils
+Depends: 
+    R (>= 2.10)
+LazyData: true
