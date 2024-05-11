@@ -43,7 +43,7 @@ The installation of **MrDAG** requires the following steps:
      library("devtools")
     ```
 
-3.  Install **MrDAG*** package by typing
+3.  Install **MrDAG** package by typing
     
     ``` 
      devtools::install_github("lb664/MrDAG")
