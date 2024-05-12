@@ -17,7 +17,7 @@ The development of **MrDAG** was motivated to uncover complex and sometimes reci
 
 The implementation of **MrDAG** is fully Bayesian. It allows us to model the uncertainty regarding which graphical models, under the constraint of edges' orientation from the exposures to the outcomes, best describe the underlying dependency structure in a given data set and it conveys this uncertainty into the estimation of the causal effects.
 
-**MrDAG** returns the explored DAGs which belong to the Markov Equivalent Class whose unique representative chain graphs are the Essential Graphs, the posterior probability of edge inclusion (PPEI) of the explored DAGs and the posterior (average) causal effects under intervention on the exposures.
+**MrDAG** returns the explored DAGs which belong to Markov Equivalent Classes whose unique representative chain graphs are the Essential Graphs, the posterior probability of edge inclusion (PPEI) of the explored DAGs and the posterior (average) causal effects under intervention on the exposures.
 
 Two data sets are included in the R-package:
 <ul>
