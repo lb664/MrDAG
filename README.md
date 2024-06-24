@@ -2,7 +2,7 @@
 
 <img src="./figures/Fig.png">
 
-# MrDAG: Mendelian randomization for multiple exposures and outcomes with Bayesian Directed Acyclic Graphs exploration and causal effects estimation
+# [MrDAG](https://doi.org/10.1101/2024.06.18.599498): Mendelian randomization for multiple exposures and outcomes with Bayesian Directed Acyclic Graphs exploration and causal effects estimation
 
 This R-package introduces **MrDAG** model, a two-sample summary-level Mendelian randomization(MR) method which explicitly models dependency relations within the exposures, the outcomes and between them by using  Bayesian Directed Acyclic Graphs (DAGs) to improve the detection of causal effects.
 
@@ -107,7 +107,7 @@ and **MrDAG** algorithm is run to generate 1,000 posterior samples of all unknow
     output <- MrDAG(data = MD2LBT_data, 
                     niter = 10000, burnin = 5000, thin = 10, 
                     tempmax = 20, w = 0.01, 
-                    MrDAGcheck = MrDAGCheck, filename = NULL)
+                    MrDAGcheck = MrDAGcheck, filename = NULL)
 
 with 0.01 prior probability of edge inclusion. Finally, the (average) causal effects and 90% credible intervals are estimated
 
