@@ -2,9 +2,9 @@
 
 <img src="./figures/Fig.png">
 
-# [MrDAG](https://doi.org/10.1101/2024.06.18.599498): Mendelian randomization for multiple exposures and outcomes with Bayesian Directed Acyclic Graphs exploration and causal effects estimation
+# [MrDAG](https://doi.org/10.1101/2024.06.18.599498): Bayesian causal graphical model for joint Mendelian randomization analysis of multiple exposures and outcomes
 
-This R-package introduces **MrDAG** model, a two-sample summary-level Mendelian randomization(MR) method which explicitly models dependency relations within the exposures, the outcomes and between them by using  Bayesian Directed Acyclic Graphs (DAGs) to improve the detection of causal effects.
+This R-package introduces **MrDAG** model, a two-sample summary-level Mendelian randomization (MR) method which explicitly models dependency relations within the exposures, the outcomes and between them by using  Directed Acyclic Graphs (DAGs) to improve the estimation of causal effects.
 
 The development of **MrDAG** was motivated to uncover complex and sometimes reciprocal relationships among lifestyle and behavioural exposures that impact mental health phenotypes.
 
@@ -15,9 +15,9 @@ The development of **MrDAG** was motivated to uncover complex and sometimes reci
     <li> Third, interventional calculus is employed to derive causal effect estimates.
 </ul>
 
-The implementation of **MrDAG** is fully Bayesian. It allows us to model the uncertainty regarding which graphical models, under the constraint of edges' orientation from the exposures to the outcomes, best describe the underlying dependency structure in a given data set and it conveys this uncertainty into the estimation of the causal effects.
+The implementation of **MrDAG** is fully Bayesian. It allows us to model the uncertainty regarding which graphical models, under the constraint of edges' orientation from the exposures to the outcomes, best describe the underlying dependency structure in a given data set. Then, it employs this uncertainty for the estimation of the causal effects.
 
-**MrDAG** returns the explored DAGs which belong to Markov Equivalent Classes whose unique representative chain graphs are the Essential Graphs, the posterior probability of edge inclusion (PPEI) of the explored DAGs and the posterior (average) causal effects under intervention on the exposures.
+**MrDAG** returns DAGs that belong to Markov Equivalent Classes whose unique representative chain graphs are the Essential Graphs, the posterior probability of edge inclusion (PPEI) between two traits (nodes) and the Bayesian model-averaged causal effects under intervention on the exposures.
 
 Two data sets are included in the R-package:
 <ul>
@@ -57,7 +57,7 @@ The installation of **MrDAG** requires the following steps:
 
 ## Example 1
 
-The first example concerns the analysis of lifestyle and behavioural exposures that might impact mental health phenotypes. After loading the data set
+The first example concerns the analysis of lifestyle and behavioural exposures that might impact mental health phenotypes. After loading the data set (IVW summary-level statistics)
 
 <!---
 # 80 characters ###############################################################
@@ -88,7 +88,7 @@ with 0.01 prior probability of edge inclusion. Finally, the posterior probabilit
 
 ## Example 2
 
-This second example performs the analysis of the same data set for reverse causation to explore whether mental health phenotypes might affect lifestyle and behavioural traits. After loading the data set
+This second example performs the analysis of the same data set for reverse causation to explore whether mental health phenotypes might affect lifestyle and behavioural traits. After loading the data set (IVW summary-level statistics)
 
 <!---
 # 80 characters ###############################################################
