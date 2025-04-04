@@ -1,0 +1,25 @@
+Package: MrDAG
+Type: Package
+Title: MrDAG: Bayesian causal graphical model for joint Mendelian randomization analysis of multiple exposures and outcomes
+Version: 0.1.1
+Date: 2025-04-01
+Authors@R: as.person(c(
+    "Leonardo Bottolo <lb664@cam.ac.uk> [aut, cre]", 
+    "Verena Zuber <v.zuber@imperial.ac.uk> [aut, ctb]"))
+Maintainer: Leonardo Bottolo <lb664@cam.ac.uk>
+Description: This package performs Mendelian randomization for multiple exposures and outcomes with Bayesian structure learning 
+    and causal effects estimation. The directionality of the causal effects between the exposures and the outcomes is assumed known, 
+    i.e., the exposures can only be potential causes of the outcomes and no reverse causation is allowed.
+License: GPL-2 | file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+RdMacros: Rdpack
+Imports: 
+    gRbase,
+    mvtnorm,
+    Rdpack,
+    utils
+Depends: 
+    R (>= 3.5.0)
+LazyData: true
