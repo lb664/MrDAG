@@ -1,0 +1,24 @@
+Package: MrDAG
+Type: Package
+Title: Bayesian Causal Graphical Model for Joint Mendelian Randomization Analysis of Multiple Exposures and Outcomes
+Version: 0.1.3
+Date: 2026-10-25
+Authors@R: c(
+    person("Leonardo", "Bottolo", email = "lb664@cam.ac.uk", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-6381-2327")),
+    person("Verena", "Zuber", email = "v.zuber@imperial.ac.uk", role = c("aut", "ctb"),
+           comment = c(ORCID = "0000-0001-9827-1877")))
+Description: Performs Mendelian randomization for multiple exposures and outcomes with Bayesian structure learning and genetically predicted effects estimation. The directionality of the genetically predicted effects between the exposures and the outcomes is assumed known, i.e., the exposures can only be potential causes of the outcomes and no reverse causation is allowed.
+License: GPL-2 | file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RdMacros: Rdpack
+Imports: 
+    gRbase,
+    mvtnorm,
+    Rdpack,
+    utils
+Depends: 
+    R (>= 3.5.0)
+LazyData: true
+Config/roxygen2/version: 8.0.0

@@ -1,0 +1,5 @@
+^inst/figures$
+^CHANGELOG\.md$
+^\.gitignore$
+^.*\.Rproj$
+^\.Rproj\.user$
